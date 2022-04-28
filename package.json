@@ -12,6 +12,7 @@
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
+    "@nuxtjs/style-resources": "^1.2.1",
     "core-js": "^3.19.3",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.15.8",
@@ -24,6 +25,7 @@
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "eslint-config-prettier": "^8.3.0",
-    "prettier": "^2.5.1"
+    "sass": "^1.50.1",
+    "sass-loader": "^10.2.1"
   }
 }
