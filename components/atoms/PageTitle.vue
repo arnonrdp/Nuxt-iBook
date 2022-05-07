@@ -9,7 +9,7 @@ import Vue from 'vue'
 export default Vue.extend({
   props: {
     text: { type: String, required: true },
-    strong: { type: Boolean, required: true },
+    strong: { type: String, required: true },
   },
 })
 </script>
