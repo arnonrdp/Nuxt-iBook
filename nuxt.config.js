@@ -24,10 +24,7 @@ export default {
   components: [{ path: '@/components', pathPrefix: false }],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-  ],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/style-resources'],
 
   styleResources: {
     scss: ['@/components/bosons/*.scss'],
@@ -37,9 +34,11 @@ export default {
   modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
 
   axios: {
-    baseURL: process.env.NOV_ENV === 'production' ? '' : 'http://localhost:3000',
+    baseURL: 'https://api-ibook-thiagosilvalopes.herokuapp.com', //process.env.NOV_ENV === 'production' ? '' : 'http://localhost:3000',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    extractCSS: true,
+  },
 }
