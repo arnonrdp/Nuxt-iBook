@@ -1,22 +1,31 @@
 <template>
   <div class="presentation">
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facilis voluptatibus, autem amet dignissimos esse eligendi doloribus
-      consectetur voluptates sunt quis ratione, quam odit consequuntur nisi voluptate non totam. Mollitia. Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Fuga modi, quo incidunt ipsam laudantium deserunt pariatur harum deleniti perspiciatis illo autem
-      quaerat vitae ipsa, et, in natus sint doloremque fugit?
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+      ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+      only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+      with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+      PageMaker including versions of Lorem Ipsum.
     </p>
 
-    <img src="@/assets/img/presentation.svg" alt="Apresentação do iBook">
+    <img src="@/assets/img/presentation.svg" alt="apresentação" />
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-
-})
-</script>
-
-<style scoped></style>
+<style lang="scss" scoped>
+.presentation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  @include screen('small', 'medium') {
+    grid-template-columns: 1fr;
+  }
+  p {
+    line-height: 26px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+</style>
