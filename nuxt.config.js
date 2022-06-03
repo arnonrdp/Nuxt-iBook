@@ -34,7 +34,7 @@ export default {
   modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
 
   axios: {
-    baseURL: 'https://arnon-ibook-api.onrender.com/', //process.env.NOV_ENV === 'production' ? '' : 'http://localhost:3000',
+    baseURL: process.env.API_URI,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
