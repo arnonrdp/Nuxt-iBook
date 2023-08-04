@@ -34,7 +34,7 @@ export default {
   modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
 
   axios: {
-    baseURL: 'https://arnon-ibook.herokuapp.com',
+    baseURL: 'https://misty-boa-umbrella.cyclic.app',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
